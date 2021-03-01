@@ -1,5 +1,5 @@
 {% set name = "ogb" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ogb-{{ version }}.tar.gz
-  sha256: 4e2d13ce2bbe2ee0d5f39d3f9f4a49303a39fc09a7aff583cdc5d0ca531b43e7
+  sha256: 01847f4168963f546b61f8709e42ad9342ee6a30f93fb5d8459b86e8cff54787
 
 build:
   number: 0
