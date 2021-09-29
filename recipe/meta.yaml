@@ -35,10 +35,6 @@ test:
   imports:
     - ogb
     - ogb.graphproppred
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/snap-stanford/ogb
