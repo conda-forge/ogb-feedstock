@@ -1,11 +1,11 @@
-About ogb
-=========
+About ogb-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ogb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/snap-stanford/ogb
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ogb-feedstock/blob/main/LICENSE.txt)
 
 Summary: Open Graph Benchmark
 
