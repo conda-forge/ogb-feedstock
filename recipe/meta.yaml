@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ogb-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ogb-{{ version }}.tar.gz
   sha256: ce90418a0e3206483187aa7b7ecac1a2c5d85b3b99aceedb807138ee43115914
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,12 +19,12 @@ requirements:
   host:
     - outdated
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - numpy >=1.16.0
     - outdated >=0.2.0
     - pandas >=0.24.0
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-learn >=0.20.0
     - six >=1.12.0
     - pytorch >=1.6.0
@@ -32,6 +32,8 @@ requirements:
     - urllib3 >=1.24.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ogb
     - ogb.graphproppred
